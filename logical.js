@@ -72,9 +72,96 @@
 //       console.log(i);
 //     }
 //   }
-for (var i = 10; i >= -20; i--) {
-    if (i % 2 == 0) {
-      console.log(i);
-    }
-  }
+// for (var i = 10; i >= -20; i--) {
+//     if (i % 2 == 0) {
+//       console.log(i);
+//     }
+//   }
+
+// more quetion all 
+// quetion 1 
+// console.log(Math.max(1,2,3,4,5,6,7,))
+
+// quetion 2
+// const arr = [1,2,3,4,5,6,7,8,8,9,8,8]
+// const duplicates = [...new Set(arr)]
+// console.log(duplicates)
+
+// quetion 3
+// skips
+
+
+// quetion 4
+// const arr = [10,20,30,40,50]
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++ ){
+//     sum += arr[i]
+// }
+// console.log(sum)
+
+// soleving quetion 5
+
+// let numbers = [10, 20, 20, 50, 30, 34, 40];
+// let even = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {  // Use strict equality check
+//         even.push(numbers[i]);
+//     }
+// }
+// console.log(even);  // Log the array directly
+
+// solving quetion 6th 
+// let numbers = [1,2,3,4,5,6,7,8,9,10,11,]
+// let even = numbers.filter(function(number){
+//     return number % 2 !== 0;
+// })
+// console.log(even)
+// asinc function 
+// async function F(){
+//     console.log('async function')
+//     return Promise.resolve(1)
+// }
+// F()
+// method 2 
+// async function f(){
+//     console.log('async function')
+//     return Promise.resolve(1,2,3,4,5,6)
+// }
+// f().then(function(result){
+//     console.log(result)
+// })
+// Simulating an asynchronous API call
+// quetion of swithc condition
+// let month = 4;
+
+// if (month === 1) {
+//     console.log('January');
+// } else if (month === 2) {
+//     console.log('February');
+// } else if (month === 3) {
+//     console.log('March');
+// } else if (month === 4) {
+//     console.log('April');
+// } else {
+//     console.log('Unknown month');
+// }
+
+// // Equivalent switch statement
+// switch (month) {
+//     case 1:
+//         console.log('January');
+//         break;
+//     case 2:
+//         console.log('February');
+//         break;
+//     case 3:
+//         console.log('March');
+//         break;
+//     case 4:
+//         console.log('April');
+//         break;
+//     default:
+//         console.log('Unknown month');
+// }
+
 
