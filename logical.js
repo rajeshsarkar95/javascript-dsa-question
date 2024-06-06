@@ -162,6 +162,54 @@
 //         break;
 //     default:
 //         console.log('Unknown month');
-// }
+// }Equallity oprators
+// console.log(5 == "5");// true
+// console.log(5 === "5") // false 
+// javascript hosting
+// console.log(x)
+// var x = 5;
+// javascript closures 
+// function outerFunction(){
+//     let outerVarible = 'I an from outer function '
 
+//     function innerfunctio(){
+//         console.log(outerVarible)
+//     }
+//     return innerfunctio;
+// }
+// const innerFucnc = outerFunction();
+// innerFucnc();  // outer: i am from outer function 
+
+
+// this keyword 
+// const person = {
+//     name:"Rajesh sarkar",
+//     greet:function(){
+//         console.log('hello my name is' + this.name)
+//     }
+// }
+// person.greet();
+
+// prototype inheritance 
+// function Person(name){
+//     this.name = "Rajesh sarkar";
+// }
+// Person.prototype.greet = function(){
+//     console.log("hello my name is " + this.name)
+// }
+// const jone = new Person('jonh')
+// jone.greet();
+
+// map function
+
+// const number = [1,2,3,5,6,7,8,9]
+// const doubleNumber = number.map(num => num * 2);
+// console.log(doubleNumber)
+
+// Asynchronus Programing 
+console.log("start")
+setTimeout(() => {
+    console.log("async aopration")
+},2000);
+console.log("end")
 
