@@ -207,9 +207,43 @@
 // console.log(doubleNumber)
 
 // Asynchronus Programing 
-console.log("start")
-setTimeout(() => {
-    console.log("async aopration")
-},2000);
-console.log("end")
+// console.log("start")
+// setTimeout(() => {
+//     console.log("async aopration")
+// },2000);
+// console.log("end")
+// this reverse String quetion 
+// function reverseString(str){
+//   return str.split('').reverse().join('');
+// }
+// console.log(reverseString("hello"))
+
+// find maximum element in the array
+// function findmax(arr){
+//   return Math.max(...arr)
+// }
+// console.log(findmax([1,2,3,4,5,6,7,8,9]))
+// prom numbers
+// function isPrime(num){
+//   if (num <= 1) return false;
+//   for(let i= 2; i <= Math.sqrt(num); i++) {
+//     if(num % i === 0) return false;
+//   }
+//   return true;
+// }
+// console.log(isPrime(7))
+// Generate Fibonacci  Sequence 
+function filbonacci(n){
+  const Sequence = [0,1];
+  for(let i =2; i < n; i++ ){
+    Sequence.push(Sequence[i -1] + Sequence[i - 2]);
+  }
+  return Sequence;
+}
+console.log(filbonacci(10))
+
+
+
+
+
 
