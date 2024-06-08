@@ -233,14 +233,61 @@
 // }
 // console.log(isPrime(7))
 // Generate Fibonacci  Sequence 
-function filbonacci(n){
-  const Sequence = [0,1];
-  for(let i =2; i < n; i++ ){
-    Sequence.push(Sequence[i -1] + Sequence[i - 2]);
-  }
-  return Sequence;
+// function filbonacci(n){
+//   const Sequence = [0,1];
+//   for(let i =2; i < n; i++ ){
+//     Sequence.push(Sequence[i -1] + Sequence[i - 2]);
+//   }
+//   return Sequence;
+// }
+// console.log(filbonacci(10))
+// function secondLargest(arr) {
+//   let first = -Infinity, second = -Infinity;
+//   for (let num of arr) {
+//       if (num > first) {
+//           second = first;
+//           first = num;
+//       } else if (num > second && num != first) {
+//           second = num;
+//       }
+//   }
+//   return second;
+// }
+// console.log(secondLargest([10, 5, 8, 12, 3])); // Output: 10 
+
+// arrow function 
+// const add = (a,b)=>a + b;
+// console.log(add(2,3))
+
+// javascript hosting 
+// console.log(hoistevar)
+ // output undefind
+// var hoistevar = 5 ;
+
+// hostedFunction();
+// function hostedFunction(){
+//     console.log("hosted")
+// }   
+
+// merge shortd array 
+function mergeSortedArrays(arr1, arr2) {
+    let mergedArray = [];
+    let i = 0, j = 0;
+    
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            mergedArray.push(arr1[i]);
+            i++;
+        } else {
+            mergedArray.push(arr2[j]);
+            j++;
+        }
+    }
+    return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j));
 }
-console.log(filbonacci(10))
+// Example
+console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+
 
 
 
