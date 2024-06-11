@@ -308,22 +308,38 @@
 
 
 // mergedarray 
-function mergeSortedArrays(arr1,arr2){
-    let mergedArray = [];
-    let i = 0, j = 0;
+// function mergeSortedArrays(arr1,arr2){
+//     let mergedArray = [];
+//     let i = 0, j = 0;
 
-    while (i < arr1.length && j < arr1.length){
-        if(arr1[i] < arr2[j]){
-            mergedArray.push(arr1[i])
-            i++;
-        }else {
-            mergedArray.push(arr2[j])
-            j++;
-        }
-    }
-    return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j))
-}
-console.log(mergeSortedArrays([1,3,2],[5,4,5]))
+//     while (i < arr1.length && j < arr1.length){
+//         if(arr1[i] < arr2[j]){
+//             mergedArray.push(arr1[i])
+//             i++;
+//         }else {
+//             mergedArray.push(arr2[j])
+//             j++;
+//         }
+//     }
+//     return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j))
+// }
+// console.log(mergeSortedArrays([1,3,2],[5,4,5]))
+
+const list  = [
+    { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+    { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+    { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+    { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+    { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+    { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+  ]
+ const fruitsName = list
+ .filter(item => item.category === "Fruits")
+ .map(item => item.name);
+ console.log(fruitsName)
+
+
+
 
 
 
