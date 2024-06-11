@@ -254,11 +254,9 @@
 //   return second;
 // }
 // console.log(secondLargest([10, 5, 8, 12, 3])); // Output: 10 
-
 // arrow function 
 // const add = (a,b)=>a + b;
 // console.log(add(2,3))
-
 // javascript hosting 
 // console.log(hoistevar)
  // output undefind
@@ -270,23 +268,64 @@
 // }   
 
 // merge shortd array 
-function mergeSortedArrays(arr1, arr2) {
+// function mergeSortedArrays(arr1, arr2) {
+//     // Initialize an empty array to store the merged result
+//     let mergedArray = [];
+//     // Initialize pointers for arr1 and arr2
+//     let i = 0, j = 0;
+    
+//     // Loop until one of the arrays is fully traversed
+//     while (i < arr1.length && j < arr2.length) {
+//         // Compare elements at current pointers
+//         if (arr1[i] < arr2[j]) {
+//             // Push the smaller element into mergedArray and move pointer in arr1
+//             mergedArray.push(arr1[i]);
+//             i++;
+//         } else {
+//             // Push the smaller element into mergedArray and move pointer in arr2
+//             mergedArray.push(arr2[j]);
+//             j++;
+//         }
+//     }
+//     // Concatenate any remaining elements from arr1 and arr2
+//     return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j));
+//   }
+  
+//   // Test the function
+//   console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+//   setprototype
+// const person = {
+//     name:"rajesh sarkar",
+//     age:54
+// };
+// const student = {
+//    id:1,
+//    gpa:3.5,
+// }
+//   Object.setPrototypeOf(student,person);
+
+//   console.log(student.name)
+
+
+// mergedarray 
+function mergeSortedArrays(arr1,arr2){
     let mergedArray = [];
     let i = 0, j = 0;
-    
-    while (i < arr1.length && j < arr2.length) {
-        if (arr1[i] < arr2[j]) {
-            mergedArray.push(arr1[i]);
+
+    while (i < arr1.length && j < arr1.length){
+        if(arr1[i] < arr2[j]){
+            mergedArray.push(arr1[i])
             i++;
-        } else {
-            mergedArray.push(arr2[j]);
+        }else {
+            mergedArray.push(arr2[j])
             j++;
         }
     }
-    return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j));
+    return mergedArray.concat(arr1.slice(i)).concat(arr2.slice(j))
 }
-// Example
-console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+console.log(mergeSortedArrays([1,3,2],[5,4,5]))
+
+
 
 
 
